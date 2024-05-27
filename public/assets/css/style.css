@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+header {
+  height: 150px;
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titre {
+  text-align: center;
+}
+header > div {
+  width: 33%;
+}
+.social {
+  text-align: right;
+  margin-right: 10px;
+  display: block;
+}
