@@ -14,6 +14,7 @@
 <body>
 
     <header>
+       
         <div class="logo">
             <img src="public\assets\img\logo.png" alt="">
         </div>
@@ -25,7 +26,8 @@
             <br>
             <br>
             <a href=""><i class="fa-brands fa-instagram fa-2xl"></i></a>
-        </div>
+        </div> 
+    
     </header>
 
     <?php require __DIR__ . "/nav.html.php" ?>
