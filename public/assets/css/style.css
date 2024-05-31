@@ -3,6 +3,11 @@
   margin: 0px;
   padding: 0px;
 }
+body {
+  background-image: url(../img/concrete-texture.png);
+  width: 100%;
+  height: auto;
+}
 header {
   height: 150px;
   background-color: rgba(25, 70, 100, 0.878);
@@ -38,7 +43,11 @@ li {
   margin: 20px;
 }
 main {
-  background-image: url(/public/assets/img/concrete-texture.png);
+  background: rgba(178, 178, 178, 0.3);
+  width: 1000px;
+  min-height: 600px;
+  margin: auto;
+  opacity: 0.5;
 }
 .linklist a {
   color: #fff;
@@ -52,4 +61,14 @@ main {
   padding: 5px;
   border-radius: 30px 30px;
   margin: 10px;
+}
+form {
+  background: rgba(4, 7, 80, 1);
+  /* background-color: #1a2530; */
+  border-radius: 10%;
+  width: 575px;
+  min-height: 500px;
+  padding: 15px;
+  margin: auto;
+  /* opacity: 1; */
 }
