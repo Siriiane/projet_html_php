@@ -3,12 +3,22 @@
 <main>
 <h1>Formulaire</h1>
 
-<form action="/action_page.php">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="John"><br>
+<form action="">
+  <label for="fname">Pseudo</label><br>
+  <input type="text" id="fname" name="fname" >
+  <br>
+  <br>
+<label for="lname">Prénom</label><br>
+<input type="text" id="lname" name="lname" >
+<br>
+<br>
+   <label for="password">Mot de passe</label><br>
+  <input type="password" id="fname" name="fname" >
+  <br>
   <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br><br>
-  <input type="submit" value="Submit">
+  <input type="text" id="lname" name="lname" >
+  <br><br>
+  <input type="submit">
 </form> 
 </main>
 <?php require __DIR__ . "/public/footer.html.php"?>
