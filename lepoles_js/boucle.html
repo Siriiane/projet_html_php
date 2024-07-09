@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Structure intératives </h1>
+    <h2>Boucles FOR</h2>
+    <P>Pour exécuter un certain nombre de fois une suite d'instructions, on utilise la boucle FOR. On va définir une
+        variable qui va servir à compter le nombre de tour (=itération). on va définir une condition qui va permettre
+        d'arrêter la boucle, quand cette condition sera fausse. On va définir une incrémentation (ou décrementation) de
+        la variable qui sert à compter les itération.</P>
+
+    syntaxe :
+    <p><code>for(<i>initialisation</i> ; <i>condition</i> ; <i>incrémentation</i>) {<br> <i>... bloc d'instructions ...</i>} </code>
+    </p>
+    <script>
+        // afficher les 10 premiers nombres 
+        for (let i = 0; i < 10; i++) {
+            document.write("<p>" + i + "</p>")
+
+        }
+        /*
+        i++;
+        i= i+1;
+        i+=
+        */
+        //    <ul>
+        //         <li>
+        //             Boucle DO WHILE (faire tant que)
+        //             <code>
+        //                 <pre>
+        //                     SYNTAXE :
+        //                     do {
+        //                         bloc d'instructions
+        //     } while (condition)
+
+        //                     NB : la différence entre cette boucle et la boucle WHILE, c'est que la condition est testé après le
+        //                     bloc. Donc, quoiqu'il arrive, le bloc d'instructions sera exécuté au moins une fois pour la
+        //                     boulce DO WHILE.
+
+
+        //                     En résumé, on utilise la boucle FOR lorsqu'on connaît le nombre d'itérations (=tours) à faire.
+        //                     Si on ne sait pas combien de tours ou si la condition d'arrêt n'est pas lié au nombre de tour,
+        //                     on utilise la boucle WHILE.
+        //                     Si on doit exécuter le bloc d'instructions au moins 1 fois, quelque soit la valeur de la condition,
+        //                     alors on utilise la boucle DO WHILE.
+
+        //                     NB : les 3 boucles sont interchangeables si on définit bien la condition de sortie de la boucle.
+        //                 </pre>
+        //             </code>
+        //         </li>
+        //     </ul>
+
+
+
+    </script>
+
+
+    <script>
+        let j = 10;
+        while (j == 10) {
+            document.write()
+        }
+        /* Exercice : tant que l'utilisateur n'a pas trouvé le nombre à taper, on lui redemande de taper un nombre */
+        let nbTape = prompt("Tapez un nombre entre 1 et 10 :");
+        let nbAtrouver = 3;
+        if (nbTape >= 1 && nbTape <= 10) {
+            if (nbTape == nbAtrouver) { document.write(nbTape + " : vous avez gagné !<br>") }
+            else if (nbTape < nbAtrouver) { document.write(nbTape + " : Trop petit !<br>") } else {
+                document.write(nbTape
+                    + " : Trop grand !<br>")
+            }
+        }
+
+    </script>
+
+
+</body>
+
+</html>

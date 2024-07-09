@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+    <script src="js/intro.js"></script>
+</head>
+
+<body>
+    <h1>Variables</h1>
+
+    <script>
+        var prenom; // déclaration de la variable prenom avec le mot-clé 'var'
+        let nombre; //déclaration de la variable nombre avec le mot-clé 'let'
+        // En js, on peut aussi déclarer une variable sans utiliser de mot-clé// 
+        adresse;// déclaration de la variable adresse sans mot-clé
+        // AFFECTATION
+        // donner une valeur à une variable
+        // opérateur :
+        // =
+        // Syntaxe : 
+        // variable = valeur
+
+        prenom = "Sirine"
+        document.write("bonjour" + prenom + "<br>");
+        // on ne peux pas utiliser une variable qui n'a pas été déclarée (erreur)
+        //  document.write("la ville de " +ville)
+        // let age= 33; déclaration et affectation dans la même instrustion
+
+        // TYPE DE DONNEES
+        /*
+        1. CHAINE DE CARACTèRES / STRING
+        Une expression de type string est entourée de " " ( guillemets ou double quote) ou de ''(apostrophes, single quote).
+    */
+        let texte = "l'arbre";
+        texte = 'l\'avion';
+        document.write(texte + "<br>")
+
+        /* 
+            2. NUM2RIQUE : number
+            une expressin numérique n'est pas délimitée par des caractères
+        */
+        age = 52;
+        /* 
+               BOOLéen : boolean
+               une expression booléenne ne peut prendre que 2 valeurs : true, false
+            */
+        let vraiFaux = true;
+        vraiFaux = false;
+
+
+    </script>
+</body>
+
+</html>
