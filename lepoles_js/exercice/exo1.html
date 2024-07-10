@@ -9,59 +9,61 @@
 
 <body>
     <script>
-        /* Affichez tous les nombres compris entre 92 et 163 (chaque nombre sur la ligne)*/
-        // for (let i = 92; i <= 163; i++) {
-        //     document.write("<p>" + i + "</p>")
+        /* 1. Affichez tous les nombres compris entre
+            92 et 163 (chaque nombre sur une ligne) */
+        // for(let i = 92; i <= 163; i++) {
+        //     document.write(i + "<br>");
         // }
-        // exo 1
 
-        // for (let i = 163; i >= 92; i--) {
-        //     document.write("<p>" + i + "</p>")
-        // }
+        /* 2. Comme l'exercice 1, mais dans l'ordre décroissant.  */
+        for (let i = 163; i >= 92; i--) {
+            document.write(i + "<br>");
+        }
+
+
+        /* 3. Comme l'exercice 2, mais en gardant la déclaration 'for' 
+                de l'exercice 1 :
+                        for(let i = 92; i <= 163; i++)
+        */
+        for (let i = 92; i <= 163; i++) {
+            document.write(163 + 92 - i + "<br>");
+        }
+
         /* 4. Affichez dans une balise ul, toutes les valeurs du tableau semaine
                 en utilisant une boucle FOR . 
                 • 1 - lundi
                 • 2 - mardi
-                • 3 ....
          */
+        let semaine = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"];
+        document.write("<ul>");
+        for (let indice = 0; indice <= semaine.length - 1; indice++) {
+            document.write("<li>" + (indice + 1) + " - " + semaine[indice] + "</li>");
+        }
+        document.write("</ul>");
 
-
-        /* 5. Affichez toutes les valeurs du tableau suivi du type de données de cette valeurs. Par exemple, 
-                • 5 - number
-                • bonjour - string
-                • false - boolean 
-                */
-        // let tableau = [5, 5.2, "5.2", true, 5 > 3, 2 + 2, 2 + "2", [1, 2, 3]];
-        // document.write("<ul>")
-        // for (let i = 0; i < tableau.length; i++) {
-        //     document.write("<li>");
-        //     document.write(i + " : ")
-        //     document.write(tableau[i])
-        //     document.write("-");
-        //     document.write(typeof tableau[i]);
-        //     document.write("</li>")
-
-        //     // <li>0 : 5- number </li>
-        // }
-        // document.write("</ul>");
-
-        let a = 5, b = 12;
-        let temp = a;
-        a = b;
-        b = temp;
-        console.log("a", a)
-        console.log("b", b);
-        /* faire la même chose sans déclarer de variable intérmédiaires (cette solution ne fonctionnera qu'avec des numériques)*/
-
-        a = 5;
-        b = 12;
-
-        a = a + b;
-        b = a - b;
-        a = a - b;
-
+        let tableau = [5, 5.2, "5.2", true, 5 > 3, 2 + 2, 2 + "2", [1, 2, 3]];
+        document.write("<ul>");
+        for (let i = 0; i < tableau.length; i++) {
+            document.write("<li>");
+            document.write(i + " : ");
+            document.write(tableau[i]);
+            document.write(" - ");
+            document.write(typeof tableau[i]);
+            document.write("</li>");
+            // <li>0 : 5 - number</li>
+        }
+        document.write("</ul>");
 
     </script>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 </body>
 
 </html>
