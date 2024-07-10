@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+<body>
+    <h1>Variables</h1>
+
+    <script>
+        var prenom; // déclaration de la variable prenom avec le mot-clé 'var'
+        let nombre; // déclaration de la variable nombre avec le mot-clé 'let'
+        /* En JS, on peut aussi déclarer une variable sans utiliser de 
+            mot-clé */
+        adresse = "4 allée du petit tonneau"; 
+        // déclaration de la variable adresse sans mot-clé
+
+        /* AFFECTATION
+            donner une valeur à une variable
+            Opérateur : 
+                =
+            Syntaxe : 
+                variable = valeur;
+            */
+        prenom = "Didier";
+        document.write("Bonjour " + prenom + "<br>");
+
+        // On ne peut pas utiliser une variable qui n'a pas été initialisée
+        // (variable déclarée mais aucune valeur n'a été affecté)
+        document.write("Le nombre est " + nombre + "<br>");
+
+        // On ne peut pas utiliser une variable qui n'a pas été déclarée (erreur)
+        // document.write("La ville de " + ville);
+        
+        let age = 33; // déclaration et affection dans la même instruction
+
+        // TYPES DE DONNEES
+        /*
+        1. CHAÎNE DE CARACTèRES : string
+            Une expression de type string est entourée de "" (guillemets ou 
+            double quote) ou de '' (apostrophes, single quote).
+
+        */
+        let texte = "l'arbre qui câche la \"forêt\"";
+        document.write(texte + "<br>");
+        texte = 'l\'avion';
+        document.write(texte + "<br>")
+
+        /*
+        2. NUMÉRIQUE : number
+            Une expression numérique n'est pas délimitée par des caractères
+        */
+        age = 52;
+    
+        /*
+        3. BOOLÉEN : boolean
+            Une expression booléenne ne peut prendre que 2 valeurs :
+                true, false
+        */
+       let vraiFaux = true;
+       vraiFaux = false;
+
+       
+    </script>
+</body>
+</html>

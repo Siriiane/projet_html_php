@@ -24,22 +24,41 @@
                 • 2 - mardi
                 • 3 ....
          */
-        let semaine = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"];
+
 
         /* 5. Affichez toutes les valeurs du tableau suivi du type de données de cette valeurs. Par exemple, 
                 • 5 - number
                 • bonjour - string
                 • false - boolean 
                 */
-        let tableau = [5, 5.2, "5.2", true, 5 > 3, 2 + 2, 2 + "2", [1, 2, 3]];
-        for (let indce = 0, indice <= semaine.length - 1, indice++) {
-            document.write("<li>" + semaine[indice] + "</li>")
+        // let tableau = [5, 5.2, "5.2", true, 5 > 3, 2 + 2, 2 + "2", [1, 2, 3]];
+        // document.write("<ul>")
+        // for (let i = 0; i < tableau.length; i++) {
+        //     document.write("<li>");
+        //     document.write(i + " : ")
+        //     document.write(tableau[i])
+        //     document.write("-");
+        //     document.write(typeof tableau[i]);
+        //     document.write("</li>")
 
-        }
-        semaine[0]
-        document.write(semaine.length);
-        document.write(semaine[semaine.length - 1])
+        //     // <li>0 : 5- number </li>
+        // }
+        // document.write("</ul>");
 
+        let a = 5, b = 12;
+        let temp = a;
+        a = b;
+        b = temp;
+        console.log("a", a)
+        console.log("b", b);
+        /* faire la même chose sans déclarer de variable intérmédiaires (cette solution ne fonctionnera qu'avec des numériques)*/
+
+        a = 5;
+        b = 12;
+
+        a = a + b;
+        b = a - b;
+        a = a - b;
 
 
     </script>

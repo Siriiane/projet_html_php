@@ -58,28 +58,57 @@
 
 
 
-    </script>
+        // </script>
 
 
+    //
     <script>
-        let j = 10;
-        while (j == 10) {
-            document.write()
-        }
-        /* Exercice : tant que l'utilisateur n'a pas trouvé le nombre à taper, on lui redemande de taper un nombre */
-        let nbTape = prompt("Tapez un nombre entre 1 et 10 :");
-        let nbAtrouver = 3;
-        if (nbTape >= 1 && nbTape <= 10) {
-            if (nbTape == nbAtrouver) { document.write(nbTape + " : vous avez gagné !<br>") }
-            else if (nbTape < nbAtrouver) { document.write(nbTape + " : Trop petit !<br>") } else {
-                document.write(nbTape
-                    + " : Trop grand !<br>")
-            }
-        }
+        //     let j = 10;
+        //     while (j == 10) {
+        //         document.write()
+        //     }
+        //     /* Exercice : tant que l'utilisateur n'a pas trouvé le nombre à taper, on lui redemande de taper un nombre */
+        //     let nbTape = prompt("Tapez un nombre entre 1 et 10 :");
+        //     let nbAtrouver = 3;
+        //     if (nbTape >= 1 && nbTape <= 10) {
+        //         if (nbTape == nbAtrouver) { document.write(nbTape + " : vous avez gagné !<br>") }
+        //         else if (nbTape < nbAtrouver) { document.write(nbTape + " : Trop petit !<br>") } else {
+        //             document.write(nbTape
+        //                 + " : Trop grand !<br>")
+        //         }
+        //     }
+
+        // </script>
+
+    <h2> FOREACH</h2>
+    <P>La boucle FOREACH est une boucle utilisée pour les tableaux dans différents langages de programmation. En JS,
+        cette boucle est liée aux objets de type Array.
+        <br> Syntaxe :
+    </P>
+    <code><pre>
+        <i>tableau</i>.forEach(function(valeur, indice) {
+            <i>...instruction...</i>
+        })
+        </pre>
+    </code>
+    <p>Pour chaque valeur du tableau, on va exécuter les instructions de la boucle.</p>
+    <script>
+        for (const jour of semaine) {
+            document.write(jour + "<br>");
+        }    </script>
+    <p>Ici on ne récupère pas les indices, uniquement les valeurs qui sont affectées à une nouvelle variable ( dans
+        l'exemple, c'est la variable <i>jour</i>)</p>
+
+    Dans FOREACH, on va déclarer une fonction qui va s'appliquer sur toutes les valeurs du tableau.
+    <script>
+        let semaine = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"];
+        semaine.forEach(function (valeur, indice) {
+            document.write("La" + indice + "ème valeurs du tableau est" + valeur);
+            document.write("<br>");
+
+        });
 
     </script>
-
-
 </body>
 
 </html>
