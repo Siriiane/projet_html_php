@@ -28,4 +28,15 @@ for (let i = 0; i < 10; i++) {
     console.log("2ème boucle" + i) 
 }
  
-    
+ let maFoncton = function (texte) {
+  document.write(texte + "<br>");
+}
+
+maFonction("Bonjour, nous sommes le jeudi");
+maFonction("11 juillet 2024");
+
+console.log("maFonction", typeof maFoncton);
+
+let fonctionFlechee = (arg1) => {
+  return arg1;
+}
